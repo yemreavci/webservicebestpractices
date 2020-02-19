@@ -1,0 +1,52 @@
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+	<appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{|yyyy-MM-dd HH:mm:ss,SSS}|%t|%p| %m%n" />
+		</layout>
+	</appender>
+
+
+	<appender name="TxAppender" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="./logs/Transaction.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d] %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="demoAppender" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="./logs/demo-service.log"></param>
+		<param name="datePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="conversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss:SSS} %t %c{1}] [%p] %m%n"></param>
+		</layout>
+	</appender>
+
+
+	<!-- ==================== LOGGERS ==================== -->
+	<logger name="com.example.demo" additivity="false">
+		<level value="DEBUG" />
+     	<appender-ref ref="ConsoleAppender"/>
+		<appender-ref ref="demoAppender" />
+	</logger>
+	<logger name="TransactionLogger" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="TxAppender" />
+	</logger>
+
+	<!-- Thirdparty Loggers -->
+	<logger name="org.springframework" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="demoAppender" />
+     	<appender-ref ref="ConsoleAppender"/>
+	</logger>
+
+	
+	<!-- Root Logger -->
+	<root>
+		<priority value="INFO" />
+		<appender-ref ref="demoAppender"/>
+    	<appender-ref ref="ConsoleAppender"/>
+	</root>
+</log4j:configuration>

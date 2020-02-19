@@ -1,0 +1,30 @@
+[2020-02-19 10:50:44,461] duration : 1
+request : {
+  "header" : {
+    "userName" : "user1",
+    "password" : "pass1"
+  },
+  "msisdn" : "905438000635"
+}response : {
+  "header" : {
+    "returnCode" : "1",
+    "returnMessage" : "SUCCESS",
+    "returnType" : "0"
+  },
+  "description" : "Success for msisdn : 905438000635"
+}
+[2020-02-19 10:51:18,035] duration : 6
+request : {
+  "header" : {
+    "userName" : "user1",
+    "password" : "pass1"
+  },
+  "msisdn" : "905438000635"
+}response : {
+  "header" : {
+    "returnCode" : "1",
+    "returnMessage" : "SUCCESS",
+    "returnType" : "0"
+  },
+  "description" : "Success for msisdn : 905438000635"
+}

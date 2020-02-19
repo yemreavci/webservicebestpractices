@@ -1,0 +1,12 @@
+[2020-02-19 10:45:39:414 http-nio-8080-exec-1 BaseController] [DEBUG] Process method is called.
+[2020-02-19 10:45:46:478 http-nio-8080-exec-1 BaseController] [DEBUG] endTransaction method is going to be called.
+[2020-02-19 10:48:41:470 http-nio-8080-exec-2 BaseController] [DEBUG] Process method is called.
+[2020-02-19 10:49:41:727 http-nio-8080-exec-3 BaseController] [DEBUG] Process method is called.
+[2020-02-19 10:49:54:296 http-nio-8080-exec-4 BaseController] [DEBUG] Process method is called.
+[2020-02-19 10:49:56:948 http-nio-8080-exec-5 BaseController] [DEBUG] Process method is called.
+[2020-02-19 10:49:57:739 http-nio-8080-exec-6 BaseController] [DEBUG] Process method is called.
+[2020-02-19 10:49:58:151 http-nio-8080-exec-7 BaseController] [DEBUG] Process method is called.
+[2020-02-19 10:49:58:536 http-nio-8080-exec-8 BaseController] [DEBUG] Process method is called.
+[2020-02-19 10:50:36:196 http-nio-8080-exec-9 BaseController] [DEBUG] Process method is called.
+[2020-02-19 10:50:44:458 http-nio-8080-exec-10 BaseController] [DEBUG] Process method is called.
+[2020-02-19 10:51:18:004 http-nio-8080-exec-1 BaseController] [DEBUG] Process method is called.
